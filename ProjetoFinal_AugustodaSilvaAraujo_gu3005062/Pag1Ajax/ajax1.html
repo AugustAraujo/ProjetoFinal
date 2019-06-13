@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Augusto da Silva Araujo"/> 
+		<meta name="generator" content="notepad++"/>
+		<meta name="keywords" content="Projeto, AJAX, Desvendando"/>
+		<meta name="description" content="Página 1, o que é AJAX"/>
+		<link rel="shortcut icon" type="image/x-icon" href="../Menu/img/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/styleajax1.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>O que é AJAX?</title>
+	</head>
+	<body>
+		<div id="tudo">
+			<header>
+				<a href="../Menu/index.html"><h1>O que é AJAX?</h1></a>
+			</header>
+			<nav>
+				<ul class="menu">
+					<li><a href="../Pag1Ajax/ajax1.html">AJAX</a>
+						<ul id="menuajax">
+							<li><a href="../Pag1Ajax/ajax1.html">O que é AJAX?</a></li>
+							<li><a href="../Pag1Ajax/ajax2.html">Vantagens e desvantagens</a></li>
+							<li><a href="../Pag1Ajax/ajax3.html">Novidades</a></li>                    
+						</ul>
+					</li>
+					<li><a href="#">Lavagem ecológica</a>
+						<ul id="menulava">
+							<li><a href="../Pag1Ajax/lav1.html">O que é?</a></li>
+							<li><a href="../Pag1Ajax/lav2.html">Benefícios</a></li>
+							<li><a href="../Pag1Ajax/lav3.html">Invista!</a></li> 
+						</ul>
+					</li>
+					<li><a href="#contato">Contato</a></li>              
+				</ul>
+			</nav>
+			<article>
+				<h2>
+					Introdução
+				</h2>
+				<p>
+				   Em JavaScript, um programa feito será executada de maneira única, do começo ao fim em sequencia, sem nada em pararelo, diferente do que é visto em Java ou C#. Por isso, para que  seja criado um programa que rode operações em pararelo a execução no JavaScript é necessário colocar uma nova ferramenta, o AJAX.
+				</p>
+				<h3>
+					CallBacks
+				</h3>
+				<p>
+					Geralmente se deseja efetuar alguma ação quando uma operação assíncrona é concluída. Nos primeiro anos do Ajax, a maneira universal de se fazer isso era usando callbacks.
+					<img src="img/exemploajax.jpg" alt="Exemplo de Ajax" title="Código de Ajax"/><br/>
+					O Callback é uma função que é passada de argumento para outra função e, geralmente, só é executado quando alguma operação é concluída ou algum evento específico ocorre. O cenário de uso mais comum é quando as requisições Ajax são finalizadas.
+				</p>
+				<h2>
+					Promises
+				</h2>
+				<p>
+					A ideia das promises é representar fluxos assíncronos de forma sequencial/vertical/top-down, além de favorecer o tratamento de exceções.
+					Criando um exemplo de um caso onde uma pessoa comprou uma pizza, foi para a casa do amigo, esperou ele terminar de comer, após isso foi a um show onde assistiu-o,tudo isso pode ser resumido de uma maneira simples com promisses:
+				<br/>
+						<img src="img/pizza.jpg" alt="Exemplo de Ajax" title="Código de Ajax" />
+				<br/>
+					Ao final de cada then()(citado acima) é possível retornar um valor qualquer(objeto,array,string, etc.), no nosso caso,  os comandos posteriores só aconteciam se os anteriores tivessem completos, como no caso da pizza, onde a pessoa só foi para a casa do amigo com a pizza depois que a pizza estava pronta(óbvio).
+				</p>
+					<br/><br/>
+					<h3>
+						Simplificando o que é promisse:
+					</h3>
+					<p>
+						Promisses são como cheques pré-datados. Um cheque recebido de tal pessoa representa uma garantia que irá receber o valor ali marcado no dia também marcado, se você tentar tirar antes da data o dinheiro não conseguirá, porém quando o requisito for atingido( A data) você pode retirar seu dinheiro.
+					</p>
+				<br/>
+			</article>
+			<footer>
+				<script type="text/javascript" src="java.js"></script>
+				<div id="creditos">
+					<p id="creditos">Feito por: Augusto da Silva Araujo<br/>
+							Análise e desenvolvimento de sistemas - 1º Semestre<br/> 
+							Desenvolvimento Web<br/> 
+							Periodo: Noturno
+					</p>
+				</div>
+				<div id="navegacao">
+					<div id="socorro">
+						<p><h4>AJAX:</h4><br/>
+							<ul id="links">
+								<li id="O que é"><a href="../Pag1Ajax/ajax1.html">O que é?</a></li>
+								<li id="Vantagens e desvantagens"><a href="../Pag1Ajax/ajax2.html">Vantagens e desvantagens</a></li>
+								<li id="Novidades"><a href="../Pag1Ajax/ajax3.html">Novidades</a></li>
+							</ul>
+						</p>
+					</div>
+					<div id="quase">
+							<p><h4>Lavagem:</h4><br/>
+								<ul id="links">
+									<li id="O que é"><a href="../Pag1Ajax/lav1.html">O que é?</a></li>
+									<li id="Vantagens e desvantagens"><a href="../Pag1Ajax/lav2.html">Benefícios</a></li>
+									<li id="Novidades"><a href="../Pag1Ajax/lav3.html">Invista!</a></li>
+								</ul>
+							</p>
+					</div>
+					<div id="contato">
+						<p><h4>Contato:</h4><br/>
+							<ul id="links">
+									<li id="facebook"><a href="https://www.facebook.com/augusto.araujo.587606">Facebook</a></li>
+									<li id="GitHub"><a href="https://github.com/AugustAraujo">GitHub</a></li>
+									<li id="Email"><a href="#" onclick="myFunction()">Email</a></li>
+								</ul>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

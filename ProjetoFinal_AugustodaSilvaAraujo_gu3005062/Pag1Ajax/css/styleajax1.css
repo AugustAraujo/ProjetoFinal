@@ -1,0 +1,313 @@
+/* Corpo todo */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Comfortaa', cursive;
+	font-size:1.1rem;
+	color:white;
+	flex-wrap:wrap;
+	background-color:black;
+}
+
+div#tudo{
+	display:flex;
+	flex-direction:column;
+	background-image:url('../img/bkgnd.jpg');
+	background-size:cover;
+}
+
+div#tudo2{
+	background-color:black;
+	display:flex;
+	flex-direction:column;
+	height:100%;
+}
+
+
+/* Header */
+
+header{
+	text-align:center;
+	background-color:black;
+	font-weight:bold;
+	height:10%;
+	padding-bottom:1rem;
+	padding-top:1rem;
+	width:100%;
+}
+
+header #lav{
+	text-align:center;
+	background-image:url('../img/fundopreto.jpg');
+	font-weight:bold;
+	height:15%;
+	width:100%;
+}
+
+/* Conteudo */
+
+h2{
+	text-align:center;
+	margin-bottom:25px;
+}
+
+article{
+	color:black;
+	margin-top:7.7%;
+}
+
+
+div #meio{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h3{
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+p{
+	margin-left:4%;
+	margin-right:4%;
+	font-size:1.3rem;
+}
+
+div#form{
+	display:flex;
+	width:50%;
+	left:5%;
+	margin-left:5%;
+	font-size:1.5rem;
+}
+
+div#ajaxdegrade{
+	width:100%;	
+	float:right;
+}
+
+#menos{
+	width:50%;
+	height:25%;
+	top:25%;
+	position:relative;
+}
+
+div #texto{
+	margin-top:10%;
+	margin-bottom:10%;
+	background-color: rgba(0, 0, 0, 0.45); 
+	color:white;
+}
+
+div#socorro{
+	list-style-image:url('../img/jsstyle.png')
+}
+
+div#quase{
+	list-style-image:url('../img/ecolist.png')
+}
+
+#cont{
+	background-image:url('../img/seca.jpg');
+	opacity:1;
+	height:120%;
+	background-size:cover;
+	transition-duration: 4s;
+}
+
+#cont:hover{
+	background-position: bottom;
+}
+
+/*Links*/
+
+nav{
+	color:white;
+	text-align:center;
+	font-size:16pt;
+	text-decoration:none;
+	background-image:none;
+}
+
+#seta{
+	width:16pt;
+	height:16pt;
+}
+
+table#fastmenu{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+}
+
+a{
+	color:white;
+	text-decoration:none;
+}
+
+a:hover{
+	color:lightblue;
+}
+
+#benefcs{
+	margin-left:5%;
+}
+
+.none{
+	list-style:none;
+	text-align:center;
+}
+
+/* Footer */
+
+footer{
+	background-image:linear-gradient(black,#2E2E2E,black);
+	width:100%;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	bottom:0;
+	color:white;
+	font-size:0.9rem;
+	margin-bottom:0;
+	text-decoration:none;
+}
+
+.rodape{
+	font-size:0.9rem;
+}
+
+#creditos{
+	font-size:0.9rem;
+}
+
+li#facebook{	
+	list-style-image:url('../img/facebook.png');
+}
+
+li#GitHub{
+	list-style-image:url('../img/gitbranco2.png');
+
+}
+
+li#Email{
+	list-style-image:url('../img/gmail.png');
+}
+
+#navegacao{
+	display: flex;
+	justify-content: space-around;
+}
+
+div#creditos{
+	text-align:left;
+	width:40%;
+	margin-left:25%;
+	text-decoration:none;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+div#quase, div#socorro, div#contato{
+	width:33%;
+}
+
+h4{
+	color:orange;
+	font-size:16pt;
+	margin-right:65%;
+}
+
+#ultP{
+	margin-bottom:30px;
+}
+
+/*Externo*/
+
+#video{
+	display:grid;
+	grid-template-columns: 1fr;
+	margin-left: 30%;
+	margin-right: 27.5%;
+}
+
+/*Menu*/
+
+.menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	position:relative;
+	border-right:1px solid #c0c0c0;
+	flex-wrap:nowrap;
+	text-align:center;
+	background-color:black;
+	list-style:none;
+	width:99.9%;
+	height:100%;
+	font-size:1rem;
+}
+
+
+.menu li a{
+	color:gray; 
+	text-decoration:none; 
+	padding:5px 10px;
+	display:block;
+}
+ 
+.menu li a:hover{
+	background:#333; 
+	color:#fff; 
+	-moz-box-shadow:0 3px 10px 0 #CCC; 
+	-webkit-box-shadow:0 3px 10px 0 #ccc; 
+	text-shadow:0px 0px 5px #fff; 
+}
+
+.menu li  ul{
+	position:absolute; 
+	top:27px; 
+	left:0;
+	background-color:#fff; 
+	display:none;
+	font-size:16px;
+} 
+
+.menu li:hover ul, .menu li.over ul{
+	display:block;
+	right:44.3%;
+	left:44.5%;
+	margin-right:auto;
+	margin-left:auto;
+	}
+	#menuajax{
+		position: absolute;
+		left: 11.5%;
+		right: 77.3%;
+	}
+.menu li ul li{
+	border:1px solid #c0c0c0; 
+	display:block; 
+}
+
+table#menu{
+	background-image:none;
+	width:58%;
+	list-style:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div#headmenu{
+	background-image:url('../img/back.jpg');
+	background-size:cover;
+}
